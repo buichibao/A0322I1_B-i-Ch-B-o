@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 500px;
+        }
+        .form {
+
+            background-color: #AFEEEE
+        }
+        .input {
+            margin-left: 125px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <form name="vd" action="" method="GET" class="form">
+        <h2 style="text-align: center; background-color: #FF4500; padding: 5px 0px">SỞ THÍCH CỦA BẠN</h2>
+        <table style="margin-left: 50px">
+
+            <tr>
+                <td> Họ và Tên: </td>
+                <td><input type="text" name="Name" value="" size="25" > </td>
+            </tr>
+            <tr>
+                <td> Email: </td>
+                <td><input type="Email" name="pass" value=""size="25" > </td>
+            </tr>
+            <tr>
+                <td> Sở Thích: </td>
+                <td>
+                    <input type="checkbox" name="n" value="" checked>Thể Thao
+                    <input type="checkbox" name="n" value="" checked> Âm Nhạc
+                    <input type="checkbox" name="n" value="" checked> Đọc Sách
+                    <br>
+                    <input type="checkbox" name="n" value="" checked> Lướt Web
+                    <input type="checkbox" name="n" value="" checked> Chơi Game
+                    <input type="checkbox" name="n" value="" checked> Điện Ảnhh
+                    <br>
+                    <input type="checkbox" name="n" value="" checked> Du Lịch</td>
+                <td>
+            </tr>
+        </table>
+        <div class="input">
+
+            <input type="submit" name="submit" value="Gửi thông tin" >
+
+            <input type="reset" name="" value="Nhập Lại">
+
+        </div>
+    </form>
+</fieldset>
+</body>
+</html>

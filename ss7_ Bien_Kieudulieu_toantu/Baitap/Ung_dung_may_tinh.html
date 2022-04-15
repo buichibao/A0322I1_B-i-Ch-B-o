@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <table>
+          <tr>
+              <th colspan="4">Caculator</th>
+          </tr>
+          <tr>
+              <td colspan="2"><input type="text" id="a" size="25"></td>
+              <td colspan="2"><input type="text" id="b" size="25"></td>
+          </tr>
+          <tr>
+              <td><button id="cong" type="button" style="size: 20px" onclick="cong()">+</button></td>
+              <td><button id="tru" type="button"  style="size: 20px" onclick="tru()">-</button></td>
+              <td><button id="nhan" type="button" style="size: 20px" onclick="nhan()">*</button></td>
+              <td><button id="chia" type="button" style="size: 20px" onclick="chia()">/</button></td>
+          </tr>
+          <tr>
+              <td><p>Kết quả:<span id="kq"></span></p></td>
+          </tr>
+      </table>
+      <script>
+          function cong() {
+              let so1 = document.getElementById("a").value;
+              let so2 = document.getElementById("b").value;
+              let c = parseInt(so1) + parseInt(so2);
+              document.getElementById("kq").innerHTML = so1 + "+" + so2 + "=" + c;
+          }
+          function tru() {
+              let so1 = document.getElementById("a").value;
+              let so2 = document.getElementById("b").value;
+              let c = parseInt(so1) - parseInt(so2);
+              document.getElementById("kq").innerHTML = so1 + "-" + so2 + "=" + c;
+          }
+          function nhan() {
+              let so1 = document.getElementById("a").value;
+              let so2 = document.getElementById("b").value;
+              let c = parseInt(so1) * parseInt(so2);
+              document.getElementById("kq").innerHTML = so1 + "*" + so2 + "=" + c;
+          }
+          function chia() {
+              let so1 = document.getElementById("a").value;
+              let so2 = document.getElementById("b").value;
+              let c = parseInt(so1) / parseInt(so2);
+              document.getElementById("kq").innerHTML = so1 + "/" + so2 + "=" + c;
+          }
+
+      </script>
+
+</body>
+</html>
