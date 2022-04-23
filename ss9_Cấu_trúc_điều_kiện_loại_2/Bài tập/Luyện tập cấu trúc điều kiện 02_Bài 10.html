@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    var KW = parseInt(prompt("Nhập số KW điện tiêu thụ:"));
+    var tien;
+    if(KW<50){
+        tien = KW * 1000;
+    }
+    else if(KW<100){
+        tien = KW *1500;
+    }
+    else if(KW<200){
+        tien = KW *2000;
+    }
+    else {
+        tien =KW * 2500;
+    }
+    alert("Số tiền cần trả là: "+tien);
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+       <script>
+           let a = parseInt(prompt("nhập a:"));
+           let b = parseInt(prompt("nhâp b"));
+           let c = parseInt(prompt("nhâp c"));
+           let delta = Math.pow(b,2)-(a*4*c);
+           let x = -b/(2*a);
+           let x1 = -b + Math.sqrt(delta)/(2*a);
+           let x2 = -b - Math.sqrt(delta)/(2*a);
+           if(delta>0){
+               alert("Phương trình có  2 nghiệm phân biệt:"+x1+"và"+x2);
+           }
+           else if(delta=0){
+               alert("Phương trình có nghiệm kép:"+x);
+           }
+           else{
+               alert("Phương trình vô nghiệm");
+           }
+       </script>
