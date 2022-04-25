@@ -8,3 +8,24 @@
 
 </body>
 </html>
+<script>
+    // Nếu làm tháng dưới 10M thì thuế 1%
+    // Nếu làm tháng dưới 20M thì thuế 2%
+    // Nếu làm tháng dưới 30M thì thuế 3%
+    // Nếu làm tháng dưới 40M thì thuế 4%
+    let tienLuong = parseInt(prompt("Nhập tiền lương của bạn:"));
+    if(tienLuong<10000000){
+        document.write("Số thuế cần đóng là :" + tienLuong*0.01);
+    }
+    else if(tienLuong<20000000){
+        document.write("Số thuế cần đóng là :" + tienLuong*0.02);
+    }
+    else if(tienLuong<30000000){
+        document.write("Số thuế cần đóng là :" + tienLuong*0.03);
+    }
+    else{
+        document.write("Số thuế cần đóng là :" + tienLuong*0.04);
+    }
+
+
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let cuocNoiMang = 1000;
+    let cuocNgoaiMang = 2000;
+    let soPhutGoi = parseInt(prompt("Nhập số phút gọi"));
+    let Mang      = prompt("Nhập mạng gọi:");
+    if(Mang=='Nội'){
+        document.write("Số tiền cước phải trả là: "+soPhutGoi*cuocNoiMang)
+    }
+    if(Mang=='Ngoại'){
+        document.write("Số tiền cước phải trả là: "+soPhutGoi*cuocNgoaiMang);
+    }
+</script>
