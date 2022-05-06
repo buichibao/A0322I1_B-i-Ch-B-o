@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let f1 = 0;
+    let f2 = 1;
+    let f3 = null;
+    let n = parseInt(prompt('Nhập số Fibonaci cần hiền thị:'))
+    let i;
+    for(i=0;i<n;i++){
+        if(i<=1){
+            f3 = 1;
+        }
+        else{
+            f3=f1+f2;
+            f1 = f2;
+            f2 = f3;
+        }
+        document.write(f3+" ");
+    }
+</script>

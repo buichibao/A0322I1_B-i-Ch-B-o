@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let m = null;
+    let n = null;
+    do {
+         m = parseInt(prompt("Nhập m lớn hơn 0:"));
+         n = parseInt(prompt("Nhập n lớn hơn 0:"));
+    }while(m<=0||n<=0);
+    for(let i = 1;i<=m;i++){
+        for(let k = 1;k<=n;k++){
+            if(i == 1 || k == 1 || i == m || k == n){
+                document.write("*");
+            }
+            else{
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>

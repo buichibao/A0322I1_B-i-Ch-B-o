@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let tienVay = parseInt(prompt("Nhập số tiền vay"));
+    let soThang = parseInt(prompt("Nhập số tháng vay"))
+    let laiSuat = parseFloat(prompt("Nhập lãi suất"));
+    let tienLai= null;
+    for(let i = 1;i<=soThang;i++){
+        tienLai= tienVay*laiSuat;
+        tienVay = tienVay + tienLai;
+    }
+    document.write(tienVay);
+</script>
