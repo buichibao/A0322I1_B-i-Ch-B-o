@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+     <script>
+         //Cách 1 dùng hàm
+         // let A = [1,2,3,4,5,6];
+         // console.log(A.reverse());
+
+         //Cách 2 dùng for
+         // let A = [1,2,3,4,5,6];
+         // for(let i =0;i<=A.length/2;i++){
+         //     let temp = A[i];
+         //     A[i]= A[A.length-i-1];
+         //     A[A.length-i-1]= temp;
+         // }
+         // document.write(A);
+
+         //Cách 3 while
+         let A = [1,2,3,4,5,6];
+         let first = 0;
+         let last = A.length-1;
+         while(first<last){
+             let b = A[first];
+             A[first] = A[last];
+             A[last]  = b;
+             first++;
+             last--;
+         }
+         document.write(A);
+
+     </script>

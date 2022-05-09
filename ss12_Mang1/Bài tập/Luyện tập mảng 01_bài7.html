@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array(10);
+    for(let i =0;i<a.length;i++){
+        a[i]=parseInt(prompt("Nhập phần tử thứ "+i));
+    }
+    let V = parseInt(prompt("Nhập V:"))
+    for(let i =0;i<a.length;i++){
+        if(a[i]===V){
+            a.splice(i,1);
+        }
+    }
+    console.log(a);
+</script>
+
+</body>
+</html>
