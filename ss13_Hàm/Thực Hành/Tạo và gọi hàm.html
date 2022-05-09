@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function hoidap(answer) {
+             let result="";
+             if(answer){
+                 result="Bạn giống tôi";
+             }
+             else{
+                 result="Tôi với bạn không hợp rồi"
+             }
+             return result;
+
+        }
+        let cauTraLoi = confirm("Bạn thích xem đá bóng không?");
+        let ketQua = hoidap(cauTraLoi);
+        alert(ketQua);
+    </script>
+</body>
+</html>

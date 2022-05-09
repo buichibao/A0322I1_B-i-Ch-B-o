@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let a = parseInt(prompt("Nhập a:"));
+       let b = parseInt(prompt("Nhập b:"));
+       let c = parseInt(prompt("Nhập c:"));
+       function timMin(a,b,c) {
+           let min;
+           if(a<b&&a<c){
+               min = a;
+           }
+           else if(b<c){
+               min = b;
+           }
+           else {
+               min = c;
+           }
+           return min;
+       }
+       alert(timMin(a,b,c));
+   </script>
+</body>
+</html>

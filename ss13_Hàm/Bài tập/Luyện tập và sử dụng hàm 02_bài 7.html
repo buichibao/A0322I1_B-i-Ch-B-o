@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       //truyền tham trị là kiểu nguyên thủy
+       // truyền bằng tham chiếu là kiểu mảng và kiểm object
+       let arr1 = new Array(2);
+       for(let i = 0;i<arr1.length;i++){
+           arr1[i]=parseInt(prompt("Nhập phần tử thứ "+i));
+       }
+       let a = arr1[0];
+       let b = arr1[1];
+       document.write("a = "+a+"<br>");
+       document.write("b = "+b+"<br>");
+       function swap(arr) {
+           let temp = arr[0];
+           arr[0]=arr[1];
+           arr[1]=temp;
+       }
+       swap(arr1);
+        a = arr1[0];
+        b = arr1[1];
+       document.write("a = "+a+"<br>");
+       document.write("b = "+b+"<br>");
+   </script>
+</body>

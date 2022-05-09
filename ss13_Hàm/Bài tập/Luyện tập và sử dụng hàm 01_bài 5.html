@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr1 =["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let arr2 =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Le"];
+        let sao = prompt("Nhập ngôi sao cần tìm");
+        function test(mang1,mang2,s) {
+            for (let i = 0; i < mang1.length; i++) {
+                if (mang1[i] === s) {
+                    return 1;
+                }
+            }
+        }
+        
+
+        alert(test(arr1,arr2,sao));
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let A = new Array(5);
+     for(let i =0;i<A.length;i++){
+         A[i] = prompt("Nhập phần tử thứ "+i);
+     }
+     let x = prompt("Nhập kí tự cần kiểm tra");
+     // function test(mang,kiTu) {
+     //     soLanXuatHien =0;
+     //     for(let i = 0;i<mang.length;i++){
+     //         if(mang[i]==kiTu){
+     //             soLanXuatHien++;
+     //         }
+     //     }
+     //     if(soLanXuatHien === 0){
+     //         return -1
+     //     }else {
+     //         return soLanXuatHien
+     //     }
+     // }
+     function test(mang,kiTu){
+         soLanXuatHien=0;
+         for(let i =0;i<mang.length;i++){
+             if(mang[i]==kiTu){
+                 soLanXuatHien++;
+             }
+         }
+         if(soLanXuatHien==0){
+             return -1;
+         }else
+         {
+             return  soLanXuatHien;
+         }
+     }
+     console.log(test(A,x));
+
+ </script>
+</body>
+</html>
