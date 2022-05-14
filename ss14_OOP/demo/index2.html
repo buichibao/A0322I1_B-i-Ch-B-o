@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //tạo lớp bằng claas
+        class DienThoai {
+            constructor(ten,hangSX) {
+                this.ten = ten;
+                this.hangSX = hangSX;
+            }
+            goiDien (){
+                document.write(this.ten + " Dang goi dien "+"<br>");
+            }
+            setTen(tenMoi){
+                this.ten = tenMoi;
+            }
+            getTen(){
+                return this.ten;
+            }
+        }
+        let ip12 = new DienThoai("IP12","Apple");
+        ip12.ten = "IP13";//thay đổi trực tiếp
+        ip12.setTen("IP14");//thay đổi gián tiếp
+        ip12.goiDien();
+
+    </script>
+</body>
+</html>

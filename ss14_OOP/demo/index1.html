@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+       //Tạo bằng function*/
+        function DienThoai(ten, hangSX) {
+              var ten = ten;
+              var hangSX = hangSX;
+
+              this.goiDien = function () {
+                  document.write(ten + " đang gọi điện " + "<br>");
+              }
+        }
+         let ip12 = new DienThoai("IPhone12","Apple");
+        ip12.goiDien();
+        let ss22 = new DienThoai("samsum s22","samsum");
+        ss22.goiDien();
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // function Students(id,name,address) {
+        //     this.id = id;
+        //     this.name = name;
+        //     this.address = address;
+        //     this.getInfor = function () {
+        //         alert("Id ="+id +" name ="+name +" address = "+address);
+        //     }
+        // }
+        // let student = new Students(1,"Bao","Ha Tinh");
+        // student.getInfor()
+        //
+         let student = {
+             id : 1,
+             name : "Bao",
+             address : "Ha Tinh",
+             getInfor : function () {
+                  return "id = "+ this.id + " name = "+this.name+" address " + this.address;
+             },
+             getId : function () {
+                 return this.id;
+             },
+             setId : function (newId) {
+                  this.id = newId;
+             }
+         }
+         // console.log(student.name);
+         // console.log(student.getInfor());
+          student.setId(2202);
+         let newid = student.getId();
+        console.log(newid);
+
+
+    </script>
+</body>
+</html>

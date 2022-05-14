@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       function MyDate(day,month,year) {
+             this.day = day;
+             this.month = month;
+             this.year = year;
+             this.getDay = function () {
+                 return this.day ;
+             }
+             this.getMonth = function () {
+                  return  this.month;
+             }
+             this.getYear = function () {
+                 return this.year;
+             }
+             this.setDate = function (day, month, year) {
+                 this.day = day;
+                 this.month= month;
+                 this.year = year;
+             }
+             this.setDay = function (day) {
+                 this.day = day;
+             }
+             this.setMonth= function (month) {
+                 this.month = month;
+             }
+             this.setYear = function (year) {
+                 this.year = year;
+             }
+             this.ToString = function (day,month,year) {
+                 //
+             }
+       }
+        let date = new MyDate(17,4,2001);
+        // let day = date.getDay();
+        // let month = date.getMonth();
+        // let year = date.getYear();
+        // alert(day+"/"+month+"/"+year);
+       //  date.setDay(22);
+       //  date.setMonth(2);
+       //  date.setYear(2001);
+       // let day1 =date.getDay();
+       // let month1= date.getMonth();
+       // let year1=date.getYear();
+       date.setDate(18,3,1972);
+       let day = date.getDay();
+       let month = date.getMonth();
+       let year = date.getYear();
+       alert(day+"/"+month+"/"+year);
+
+
+   </script>
+</body>
+</html>

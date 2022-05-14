@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+
+       // function Student(id,name,address) {
+       //     this.id = id;
+       //     this.name = name;
+       //     this.address = address;
+       //     this.getInfor = function () {
+       //            return "ID = "+this.id + "name = "+this.name +" address = "+this.address;
+       //     }
+       // }
+       // let student = new Student(1,"BCB","Hà Tĩnh");
+       // console.log(student.getInfor());
+       //Khai báo 1 đối tượng nhanh
+       let student = {
+           id : 1,
+           name : "Nguyen van A",
+           address : "Ha Noi",
+           getInfor : function () {
+               return "ID = "+this.id + "name = "+this.name +" address = "+this.address;
+           }
+       }
+       console.log(student.getInfor());
+   </script>
+</body>
+</html>

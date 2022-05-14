@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class  Rectangle {
+        constructor(dai,rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        getP () {
+            return 2*(this.dai+this.rong);
+        }
+        getS () {
+            return this.rong*this.dai;
+        }
+    }
+    let cn = new Rectangle(3,2);
+    let dai = cn.dai;
+    let rong = cn.rong;
+
+    document.write("chiều dài "+ dai +" và chiều rộng " +rong+"<br>");
+
+    document.write("Chu vi và diện tích lần lượt là :" +cn.getP()+","+cn.getS())
+
+</script>
+</body>
+</html>
