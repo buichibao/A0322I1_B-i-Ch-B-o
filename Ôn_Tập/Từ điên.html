@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <table>
+         <tr>
+             <th>Dictionary</th>
+             <th>From</th>
+             <th>To</th>
+         </tr>
+         <tr>
+            <td><input type="text" id="inputtxt" placeholder="Nhập từ cần kiểm tra"></td>
+             <td><select id="from">
+                 <option value="vietnam">Việt Nam</option>
+                 <option value="anh">Anh</option>
+             </select></td>
+             <td><select id="to">
+                 <option value="vietnam">Việt Nam</option>
+                 <option value="anh">Anh</option>
+             </select></td>
+             <td>
+                 <button onclick="kiemtra()">Kiểm tra</button>
+             </td>
+         </tr>
+         <tr>
+           <td><p style="color: blue">Result:<span id="result"></span></p></td>
+         </tr>
+     </table>
+</body>
+</html>
+<script>
+    let tv = ["đi", "chạy", "nhảy", "bơi", "múa"];
+    let ta = ["go", "run", "yum", "swimming", "dance"];
+    let enter = document.getElementById("inputtxt").value;
+    let from = document.getElementById("from").value;
+    let to = document.getElementById("to").value;
+    function kiemtra() {
+        if(from==to){
+            document.getElementById("result").innerHTML=enter;
+        }
+        else if(from == "vietnam"&& to=="anh"){
+            let c = tv.indexOf(enter);
+            if(c!=-1){
+                document.getElementById("result").innerHTML=ta[c];
+            }
+            else{
+                alert("Error");
+            }
+        }else if(from=="anh"&&to=="vietnam"){
+            let d = ta.indexOf(enter);
+            if(d!=-1){
+                document.getElementById("result").innerHTML=tv[d];
+            }
+            else {
+                alert("error");
+            }
+        }
+    }
+
+</script>

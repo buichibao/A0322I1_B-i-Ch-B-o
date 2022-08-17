@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+</style>
+<body>
+    <h1>Xổ số Code Gym</h1>
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <td><button>15</button></td>-->
+<!--            <td><button>25</button></td>-->
+<!--            <td><button>35</button></td>-->
+<!--            <td><button>45</button></td>-->
+<!--            <td><button>55</button></td>-->
+<!--            <td><button>65</button></td>-->
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td><button>10</button></td>-->
+<!--            <td><button>20</button></td>-->
+<!--            <td><button>30</button></td>-->
+<!--            <td><button>40</button></td>-->
+<!--            <td><button>50</button></td>-->
+<!--            <td><button>60</button></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+    <button onclick="muave()">Mua vé</button>
+    <button onclick="xemketqua(array1)">Xem kết quả</button>
+</body>
+</html>
+  <script>
+      
+      let array1 =[];
+      function muave() {
+         let a = parseInt(prompt("1-Để nhâp số cần mua hoặc 2- để Ramdom vé"));
+         if(a===1){
+             let arr = [];
+             for(let i =1;i<=6;i++){
+                arr[i] = prompt("Nhập sô thứ "+i);
+                array1.push(arr[i]);
+             }
+         }if(a===2){
+              let arr = [];
+              for(let i = 1;i<=6;i++){
+                  arr[i]=parseInt(Math.random()*10);
+                  array1.push(arr[i]);
+              }
+          }
+      }
+      function xemketqua(arr) {
+           let array2 =[1,2,3,4,5,6];
+          if (array2[5]!=arr[5]) {
+              alert("Vé của bạn là "+array1.join('')+"chúc bạn may mắn lần sau");
+          }else {
+              if(array2[4]!=arr[4]) {
+                  alert("Vé của bạn là " + array1.join('') + "chúc bạn may mắn lần sau");
+              } else {
+                     if(array2[3]!=arr[3]){
+                          alert("Vé của bạn là "+array1.join('')+"chúc bạn may mắn lần sau");
+                      }else {
+                          if(array2[2]!=arr[2]){
+                              alert("Vé của bạn là "+array1.join('')+"bạn trúng giải 3");
+                          }else {
+                              if(array2[1]!=arr[1]){
+                                  alert("Vé của bạn là "+array1.join('')+"bạn trúng giải 3");
+                              }else{
+                                  alert("Vé của bạn là "+array1.join('')+"bạn trúng giải 2");
+                                  if(array2[0]!=arr[0]){
+                                      alert("Vé của bạn là "+array1.join('')+"bạn trúng giải 2");
+                                  }else{
+                                      alert("Vé của bạn là "+array1.join('')+"bạn trúng giải 1");
+                                  }
+                              }
+                          }
+                     }
+              }
+          }
+
+      }
+  </script>

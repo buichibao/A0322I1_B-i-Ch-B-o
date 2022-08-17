@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+       <table cellpadding="5px" cellspacing="5px">
+           <h2>Cacurator</h2>
+           <tr>
+               <input type="text" size="20" id="one">
+               <input type="text" size="20" id="to">
+               <br><br>
+           </tr>
+           <tr>
+               <input type="button" value="Addtion(+)" id="cong" onclick="cong()">
+               <input type="button" value="Subtraction(-)" id="tru" onclick="tru()">
+               <input type="button" value="Multipcation(*)" id="nhan" onclick="nhan()">
+               <input type="button" value="Division(/)" id="chia" onclick="chia()">
+           </tr>
+           <tr>
+               <p>Kết quả:<span id="ketqua"></span></p>
+           </tr>
+
+       </table>
+
+</body>
+</html>
+<script>
+
+function cong() {
+                  var a = document.getElementById("one").value;
+                  var b =document.getElementById("to").value;
+          let c = parseInt(a)+parseInt(b);
+          document.getElementById("ketqua").innerHTML= c ;
+    }
+    function tru() {
+        var a = document.getElementById("one").value;
+        var b =document.getElementById("to").value;
+        let c = parseInt(a)-parseInt(b);
+        document.getElementById("ketqua").innerHTML= c ;
+    }
+    function nhan() {
+        var a = document.getElementById("one").value;
+        var b =document.getElementById("to").value;
+        let c = parseInt(a)*parseInt(b);
+        document.getElementById("ketqua").innerHTML= c ;
+    }
+    function chia() {
+        var a = document.getElementById("one").value;
+        var b =document.getElementById("to").value;
+        let c = parseInt(a)/parseInt(b);
+        document.getElementById("ketqua").innerHTML= c ;
+    }
+</script>

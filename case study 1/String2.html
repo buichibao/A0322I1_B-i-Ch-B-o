@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      // let str1 = prompt("Nhập chuỗi");
+      // let charArr = [];
+      // for(let i = 0;i<str1.length;i++){
+      //     charArr.push(str1[i]);
+      // }
+      // function demPhanTu(a) {
+      //     let dem = 0;
+      //     let tam ;
+      //     for(let i =0;i<a.length;i++){
+      //         for(let j=i+1;j<a.length;j++){
+      //             if(a[i]==a[j]){
+      //                 tam = 0;
+      //                 continue;
+      //             }
+      //             else
+      //                 tam =1;
+      //         }
+      //         if(tam ==1)
+      //             dem++;
+      //     }
+      //     return dem;
+      // }
+      //
+      // document.write(demPhanTu(charArr));
+      let str=document.getElementById("id_IV2").value;
+      let str1=str.replace(/\s+/g,'').trim();
+      let dem=0;
+      for(let i=0; i<str1.length; i++)
+      {
+          let kt=true;
+          for(let j=0; j<i; j++)
+          {
+              if(str1[i]===str1[j])
+              {
+                  kt=false;
+                  break;
+              }
+          }
+          if(kt) dem++;
+      }
+      document.getElementById("id_outIV2").innerHTML="Số ký tự khác nhau: "+dem;
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let kiTu;
+        do {
+            kiTu = prompt("Nhập kí tự:");
+            kiTu.toString();
+        }while (kiTu.toString()>1);
+        switch (kiTu) {
+             case 'o':
+             case 'O':
+             case 'u':
+             case 'U':
+             case 'i':
+             case 'I':
+             case 'e':
+             case 'E':
+             case 'a':
+             case 'A':
+                 alert("Đây là nguyên âm");
+                 break;
+             default:
+                 alert("Đây là phụ âm");
+        }
+    </script>
+</body>
+</html>

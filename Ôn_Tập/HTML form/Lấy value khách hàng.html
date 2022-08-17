@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .d04 tr:nth-child(even) {
+        background:#dddddd;
+    }
+    .d04 tr:nth-child(odd){
+        background: dimgrey;
+    }
+</style>
+<body>
+    <form c>
+        <h2>Market Research Survey</h2>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+        <hr>
+        <h4>What is your age range</h4>
+        <select>
+            <option>18-24</option>
+            <option>25-30</option>
+            <option>31-50</option>
+            <option>........................................................</option>
+        </select>
+        <h4>What is your yearly income range?</h4>
+        <select >
+            <option>$0-25,000</option>
+            <option>$50,000</option>
+            <option>$100,000</option>
+            <option>$10000000000000000000000000</option>
+        </select>
+        <h4>Gender</h4>
+        <input type="radio" name="male">Male<br>
+        <input type="radio" name="Female">Female<br>
+        <h4>Which of the following products have your purchased the last</h4>
+        <input type="checkbox" name="p1">Product 1 <br>
+        <input type="checkbox" name="p2">Product 2 <br>
+        <input type="checkbox" name="p3">Product 3 <br>
+        <h4>How often would use new product</h4>
+        <input type="radio" name="d">Daily<br>
+        <input type="radio" name="w">Weekly<br>
+        <input type="radio" name="m">Monthly<br>
+
+        <h4>What would you pay for the new product</h4>
+        <table>
+            <tr>
+                <td rowspan="2">$</td>
+                <td><input type="text" size="10"> . </td>
+                <td><input type="text" size="2"></td>
+            </tr>
+            <tr>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <h4>What features would you like to sê in the new product</h4>
+        <textarea rows="6" cols="50"></textarea>
+        <p>Please rate level ò agreement with the follwing statements</p>
+        <table border="1" cellspadding="10px" cellpadding="10px" class="d04">
+            <tr>
+                <td></td>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <td>Strongly Agree</td>
+            </tr>
+            <tr>
+                <td><h4>Our products are priced fairly</h4></td>
+                <td><input type="radio" name="1">1</td>
+                <td><input type="radio" name="2">2</td>
+                <td><input type="radio" name="3">3</td>
+                <td><input type="radio" name="4">4</td>
+            </tr>
+            <tr>
+                <td><h4>Our products are high quality</h4></td>
+                <td><input type="radio" name="1">1</td>
+                <td><input type="radio" name="2">2</td>
+                <td><input type="radio" name="3">3</td>
+                <td><input type="radio" name="4">4</td>
+            </tr>
+            <tr>
+                <td ><h4>You would recommend our product to afriend or<br> coworker</h4></td>
+                <td><input type="radio" name="1">1</td>
+                <td><input type="radio" name="2">2</td>
+                <td><input type="radio" name="3">3</td>
+                <td><input type="radio" name="4">4</td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value=" submit">
+    </form>
+</body>
+</html>

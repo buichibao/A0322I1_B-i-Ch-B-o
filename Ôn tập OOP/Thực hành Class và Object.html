@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function Student(id,name,address) {
+              this.id = id;
+              this.name = name;
+              this.address = address;
+              this.getInfor = function () {
+                  return "Id = "+id+" name "+name +" address "+ address;
+              }
+        }
+        let student = new Student(1,"Bùi Chí Bảo"," Hà Tĩnh ");
+        console.log(student.getInfor());
+        console.log(student.name);
+        let student = {
+            id:1,
+            name:"Bùi Chí Bảo",
+            address:"Hà Tĩnh",
+            getInfor : function () {
+                return "Id = "+this.id +" name "+this.name+ " address "+this.address;
+            }
+        }
+        console.log(student.getInfor());
+    </script>
+</body>
+</html>

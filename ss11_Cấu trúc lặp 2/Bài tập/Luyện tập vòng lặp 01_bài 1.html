@@ -5,16 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+  <button onclick="hienThi()">Hiển Thị</button>
 <script>
-    let i;
-    for(i=1;i<=100;i++){
-        if(i==99){
-            document.write("Đã hoàn thành"+"<br>");
-        }
-        else{
-            document.write(i+"<br>");
-        }
+    function hienThi(){
+        let i=1;
+       while (i<=100){
+           document.write(i+"<br>");
+           if(i==99){
+               alert("Đã hoàn thành");
+           }
+           i++;
+       }
     }
+
 </script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+     let person = {
+         name:{
+             first:'Bui',
+             last:'Bao'
+         },
+         age:"21",
+         gender:"male",
+         interests:["music","foolball"],
+         bio:function () {
+            return "Họ "+this.name.first+" ten "+this.name.last+ " tuổi "+this.age+" giới tính "+this.gender+" sở thích "+ this.interests[0]+" và "+this.interests[1];
+         },
+         greeting:function () {
+            alert("Hi ! I am "+this.name[1]);
+         }
+     }
+     person.age = 25;
+     person['name']['last']='Vinh';
+     console.log(person.bio());
+     //cập nhật các thành phần mới
+       person.eyes = 'red';
+       person.farewell =function () {
+            alert("bye everybody");
+       }
+       alert(person.eyes);
+   </script>
+</body>
+</html>

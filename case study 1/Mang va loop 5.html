@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <p> 1-Cafe</p>
+        <p> 2-cam vắt</p>
+        <p> 3-nước ép cà rốt</p>
+        <p> 4-nước ép cà chua</p>
+        <p> 5-nước lọc</p>
+        <p> 6-nước dừa</p>
+        <p> 7-Thoát</p>
+        <button onclick="order()">Order</button>
+   <script>
+       function order(){
+           let cafe = 10;
+           let camVat = 15;
+           let caRot = 10;
+           let caChua = 10;
+           let nuocLoc = 5;
+           let nuocDua = 20;
+           let doUong;
+           let soLuong;
+           do {
+               doUong = prompt("Nhập số tương ứng để chọn đồ uống");
+               if(doUong!="7"){
+                   // if(doUong=="1"&&doUong=="2"&&doUong=="3"&&doUong=="4"&&doUong=="5"&&doUong=="6"){
+                   soLuong = parseInt(prompt("Nhập số lượng oder"));
+               }
+               switch (doUong) {
+                   case "1":
+                       alert("Bạn đã chọn cafe với số lượng là "+ soLuong +" số tiền cần thanh toán là :"+soLuong*cafe);
+                       break;
+                   case "2":
+                       alert("Bạn đã chọn cam vắt với số lượng là "+ soLuong +" số tiền cần thanh toán là :"+soLuong*camVat);
+                       break;
+                   case "3":
+                       alert("Bạn đã chọn cà rốt với số lượng là "+ soLuong +" số tiền cần thanh toán là :"+soLuong*caRot);
+                       break;
+                   case "4":
+                       alert("Bạn đã chọn nước cà chua với số lượng là "+ soLuong +" số tiền cần thanh toán là :"+soLuong*caChua);
+                       break;
+                   case "5":
+                       alert("Bạn đã chọn nước lọc với số lượng là "+ soLuong +" số tiền cần thanh toán là :"+soLuong*nuocLoc);
+                       break;
+                   case "6":
+                       alert("Bạn đã chọn nước dừa với số lượng là "+ soLuong +" số tiền cần thanh toán là :"+soLuong*nuocDua);
+                       break;
+                   case "7":
+                       alert("Bạn không oder");
+                       break;
+                   default:
+                       alert("Gọi sai món rồi!!!");
+               }
+           }while(doUong!="7");
+       }
+
+   </script>
+</body>
+</html>

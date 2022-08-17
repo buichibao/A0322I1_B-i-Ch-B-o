@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <table cellpadding="10px">
+         <tr>
+             <th>Amount</th>
+             <th>Form Curency</th>
+             <th>To Curency</th>
+             <th></th>
+         </tr>
+         <tr>
+             <td><input type="text" size="30px" id="sotiennhap"></td>
+             <td><select id="tennuoc">
+                 <option value="VietNam" id="VietNam">VietNam</option>
+                 <option value="American" id="American">American</option>
+             </select></td>
+             <td><select id="tentien">
+                 <option value="USD" id="USD">USD</option>
+                 <option value="VND" id="VND">VND</option>
+             </select></td>
+             <td><input type="button" value="Convert" id="button" onclick="chuyendoi()"></td>
+         </tr>
+         <td>
+             <p style="color: blue">Result:<span id="ketqua"></span></p>
+         </td>
+     </table>
+
+</body>
+</html>
+<script>
+    function chuyendoi() {
+        let enter = document.getElementById("sotiennhap").value;
+        let from = document.getElementById("tennuoc").value;
+        let to = document.getElementById("tentien").value;
+        if ((from == "VietNam" && to == "VND") || (from == "American" && to == "USD")) {
+            document.getElementById("ketqua").innerHTML = enter;}
+        if (from == "VietNam" && to == 'USD') {
+            document.getElementById("ketqua").innerHTML = enter / 24000;
+        }
+        if (from == 'American' && to == "VND") {
+            document.getElementById("ketqua").innerHTML = enter * 24000;
+        }
+    }
+
+
+</script>

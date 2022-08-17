@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let m = parseInt(prompt("Nhập m là dòng"));
+        let n = parseInt(prompt("Nhập n là cột"));
+        // let arr = [];
+        // for(let i = 0;i<m;i++){
+        //     let a=[];
+        //     for(let j=0; j<n; j++)
+        //     {
+        //         let b=parseInt(prompt("Nhập phần tử Array["+i+"]["+j+"]"));
+        //         a.push(b);
+        //     }
+        //     arr.push(a);9
+        // }
+        let arr = [];
+        for(let i =0;i<m;i++){
+            arr[i] = [];
+            for(let j=0;j<n;j++){
+                arr[i][j]=parseInt(prompt("Nhập phần tử thứ arr["+i+"]["+j+"]"));
+            }
+        }
+        document.write(arr+"<br>");
+        function sum(a) {
+           let sum = 0;
+           for(let i =0;i<m;i++){
+               for(let j = 0;j<n;j++){
+                   if(a[i][j]>max){
+                       sum+=a[i][j];
+                   }
+               }
+           }
+           return sum;
+        }
+        let c= sum(arr);
+        console.log(c);
+    </script>
+</body>
+</html>

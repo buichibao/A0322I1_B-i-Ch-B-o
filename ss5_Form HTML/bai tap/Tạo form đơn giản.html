@@ -6,41 +6,52 @@
     <style>
         body {
             width: 800px;
+            height: 50%;
+            background-color:white;
+            border: solid;
+            border-color: black;
+        }
+        table{
+            color: orangered;
         }
     </style>
 
 </head>
-<body style="background: aqua;margin-left: 25% ">
-<fieldset style="background-color: white">
+<body style=" margin-left: 25% ">
+
 <form>
     <div style="background: coral;text-align: center;"  ><h2>SỞ THÍCH CỦA BẠN</h2>
      </div>
-    <p style="text-align: center">Họ và tên <input type="text" name="yourname"></p>
-    <p style="text-align: center">Email <input type="text" name="email"></p>
-    <table >
-    <tr>
-        <td>Sở thích</td>
-        <td><input type="checkbox" name="hobby">Thể Thao</td>
-        <td><input type="checkbox" name="hobby">Âm Nhạc</td>
-        <td><input type="checkbox" name="hobby">Đọc Sách</td>
-        <br>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="checkbox" name="hobby">Lướt wed</td>
-        <td><input type="checkbox" name="hobby">Chơi game</td>
-        <td><input type="checkbox" name="hobby">Điện ảnh</td><br>
-    </tr>
-    <tr>
-        <td></td>
-        <td> <input type="checkbox" name="hobby">Du lịch</td>
-    </tr>
-    </table>
+    <p style="text-align: center;color:blue ">Họ và tên <input type="text" name="yourname"></p>
+    <p style="text-align: center;color: blue ">Email <input type="text" name="email"></p>
+    <div style = "margin-left: 265px;" >
+        <table>
+        <tr>
+            <td style="color: blue">Sở thích</td>
+            <td><input type="checkbox" name="hobby">Thể Thao</td>
+            <td><input type="checkbox" name="hobby">Âm Nhạc</td>
+            <td><input type="checkbox" name="hobby">Đọc Sách</td>
+            <br>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="hobby">Lướt wed</td>
+            <td><input type="checkbox" name="hobby">Chơi game</td>
+            <td><input type="checkbox" name="hobby">Điện ảnh</td><br>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type="checkbox" name="hobby">Du lịch</td>
+        </tr>
+        </table>
+    </div>
+
 
         <div style=" text-align: center" >
             <input type="submit" value="Gửi thông tin">
             <input type="reset" value="Nhập lại">
     </div>
-</fieldset>
+</form>
+
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let arrA = [1,2,3,4,5];
+      let arrB = [2,3,4,5,6,7];
+      let arrResutl = [];
+      function check(x ,arr) {
+         for(let i = 0;i<arr.length;i++){
+             if(arr[i]==x){
+                return false;
+                continue;
+             }
+         }
+         return true;
+      }
+      for (let i = 0 ; i< arrB.length;i++){
+          if(check(arrB[i],arrA)==true){
+              arrResutl.push(arrB[i]);
+          }
+      }
+      console.log(arrResutl);
+
+  </script>
+</body>
+</html>

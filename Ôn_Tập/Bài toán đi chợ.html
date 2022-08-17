@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--/*-->
+<!--* Mẹ cho A 10 đồng đi chợ.-->
+<!--* Mô phỏng lại quá trình đi chợ mua hàng của A-->
+<!--* Điều kiện: A chỉ được mua hàng khi còn tiền.-->
+<!--* // Xác định vấn đề cần lặp là gì-->
+<!--* // Lặp bao nhiêu lần-->
+<!--* // Xác định điều kiện lặp.-->
+<!--* */-->
+</body>
+</html>
+<script>
+    let tien = 10;
+    while(tien!=0){
+        let sanpham = prompt("A mua gì?");
+        document.write("A mua "+ sanpham);
+        let gia = parseInt(prompt("Giá tiền của "+sanpham+" là:"));
+        document.write(" hết "+gia);
+        if(tien >= gia){
+            tien = tien - gia;
+        }
+    }
+</script>

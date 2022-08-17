@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      OOP Object Oriented Programming là một triết lý, kĩ thuật lập trình
+      Thuộc Tính : các dữ liệu ,tính chất cảu đối tượng
+      Hành vị: các khả năng , hành động mà đối tượng có thể thưc hiện
+
+     Hướng đội tượng
+     Tìm và phân tích mối quan hẹ giữa các đối tượng trong bài toán
+     Mã lệnh và dữ liệu liên kết trong thể thống nhất
+     Hướng tiếp cận đa dạng gần với thực tế
+     Ưu thế
+     Khả năng tái sử dụng cao
+     Ổn định và dẽ bảo trì
+     Chi phí giảm dần
+</body>
+</html>
+<script>
+    // function Student(id,name,address) {
+    //      this.id= id;
+    //      this.name = name;
+    //      this.address=address;
+    //      this.getInfor = function () {
+    //          return "id = "+this.id+" name = "+this.name+" address = "+address;
+    //      }
+    // }
+    // let sudent = new Student('1','Bảo','Hà Tĩnh');
+    // console.log(sudent.getInfor());
+    let student = {
+        id:'1',
+        name:'Bảo',
+        address:' Hà Tĩnh ',
+        getInfor : function () {
+            return "id = "+this.id+" name = "+this.name+" address = "+this.address;
+    }
+    }
+    console.log(student.name);
+    console.log(student.getInfor());
+
+</script>

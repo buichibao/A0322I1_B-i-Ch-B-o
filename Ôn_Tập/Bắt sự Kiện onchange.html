@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <select id="myselect" onchange="dosome_thing()">
+         <option value="1">A</option>
+         <option value="2">B</option>
+         <option value="3">C</option>
+         <option value="4">D</option>
+         //hiểu thị 123 không phải abc
+     </select>
+</body>
+</html>
+     <script>
+         function dosome_thing() {
+             var select1 =document.getElementById("myselect").value;
+             alert(select1);
+         }
+     </script>

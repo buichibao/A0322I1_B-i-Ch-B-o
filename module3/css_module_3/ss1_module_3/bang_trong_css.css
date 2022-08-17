@@ -1,0 +1,29 @@
+table,th,td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    /*thiết lập các đường viên thành 1 đường*/
+}
+tr:nth-child(even){
+    background-color: darkgray;
+    /* hàng lẻ thì bị đổi màu */
+}
+th {
+    background-color: green;
+    color: #dddddd;
+    width: 100%;
+    height: 50px;
+    /* chiều rộng 100 % và chiều cao của th là 50px */
+}
+td {
+
+    text-align: center;
+    /*căn giữa nội dung của thẻ td*/
+}
+th,td {
+    padding: 20px;
+    /*khoảng cách giữa nội dung và viền */
+}
+
+

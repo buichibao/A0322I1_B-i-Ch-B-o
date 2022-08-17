@@ -1,0 +1,12 @@
+.a {
+    list-style-type: circle;
+}
+.b {
+    list-style-type: disc;
+}
+.c {
+    list-style-type:upper-alpha ;
+}
+.d {
+    list-style-type: lower-alpha;
+}

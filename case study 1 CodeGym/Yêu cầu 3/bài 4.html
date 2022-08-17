@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let input = prompt("Nhập số");
+        // let result ="";
+        // input.toString();
+        // for (let i =0;i<input.length;i++){
+        //     switch (input[i]) {
+        //         case '1':
+        //             result+=' một ';
+        //             break;
+        //         case '2':
+        //             result+= ' hai ';
+        //             break;
+        //         case '3':
+        //             result+= ' ba ';
+        //             break;
+        //         case '4':
+        //             result+=' bốn ';
+        //             break;
+        //         case '5':
+        //             result+= ' năm ';
+        //             break;
+        //         case '6':
+        //             result+= ' sáu ';
+        //             break;
+        //         case '7':
+        //             result+= ' bảy ';
+        //             break;
+        //         case '8':
+        //             result+= ' tám ';
+        //             break;
+        //         case '9':
+        //             result+= ' chín ';
+        //             break;
+        //         case '0':
+        //             result+=' không ';
+        //             break;
+        //         default:
+        //             alert("bạn nhập sai");
+        //     }
+        // }
+        //
+        // document.write(result);
+        let strNumber = [" không "," một "," hai "," ba "," bốn "," năm "," sáu ", " bảy "," tám ", " chín "];
+        let input = prompt("Nhập số ");
+        let result ="";
+        for(let i = 0;i<input.length;i++){
+            result+=strNumber[input[i]];
+        }
+        alert(" chuyển số "+input+" thành chuỗi :"+result);
+    </script>
+</body>
+</html>

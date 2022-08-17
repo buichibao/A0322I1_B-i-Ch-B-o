@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       function check(x) {
+          let temp =0;
+          for(let i =1;i<x;i++){
+              if(x%i==0)
+                  temp = temp +i;
+          }
+          if(temp!=0&&temp==x){
+              return 1;
+          }else {
+              return 0;
+          }
+       }
+       let arrA = [];
+       let sizeA = parseInt(prompt("Nhập độ dài mảng a"));
+       for(let i =0;i<sizeA;i++){
+           arrA.push(parseInt(prompt("Nhập phần tử thứ "+i+" của mảng A ")));
+       }
+       let count = 0;
+       for (let i = 0;i<sizeA;i++){
+           if(check(arrA[i])==1){
+               count++;
+           }
+       }
+       alert("Số số hoàn hảo trong dãy là "+count)
+   </script>
+</body>
+</html>

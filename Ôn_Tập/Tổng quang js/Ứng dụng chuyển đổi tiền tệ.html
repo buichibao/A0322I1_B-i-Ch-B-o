@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>Form Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="input" name="input"></td>
+            <td><select id = "from">
+                <option value="vn">VietNam</option>
+                <option value="a">Amerycan</option>
+            </select></td>
+            <td><select id="to">
+                <option value="a">USD</option>
+                <option value="vn">VND</option>
+            </select>
+            </td>
+            <td>
+                <button type="button" onclick="chuyenDoi()" style="background-color: blue;color: #dddddd">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue"><p>Result:<span id="result"></span></p></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+    function chuyenDoi() {
+        let input = document.getElementById('input').value;
+        let from = document.getElementById('from').value;
+        let to = document.getElementById('to').value;
+        let result;
+        if(from==to){
+            document.getElementById('result').innerHTML=input*1;
+        }else if(from=='vn'&&to=='a'){
+            document.getElementById('result').innerHTML=input/24000;
+        }else if(from=='a'&&to=='vn'){
+            document.getElementById('result').innerHTML=input*24000;
+        }
+    }
+
+</script>

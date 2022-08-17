@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <select onchange="changeFunction()" id="myselect">
+         <option value="Bạn chọn A">A</option>
+         <option value="Bạn chọn B">B</option>
+         <option value="Bạn chọn C">C</option>
+     </select>
+</body>
+</html>
+<script>
+     function  changeFunction(){
+        let select = document.getElementById("myselect").value;
+        alert(select);
+    }
+</script>

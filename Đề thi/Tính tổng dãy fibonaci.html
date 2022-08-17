@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function sumFibonaci(n) {
+            let f1 = 0;
+            let f2 = 1;
+            let f3 = 0;
+            let sum = 1;
+            for(let i = 2;i<=n;i++){
+                f3 = f2 + f1;
+                f1 = f2;
+                f2 = f3;
+                sum+=f3;
+            }
+            return sum;
+        }
+        let n = parseInt(prompt("Nhập n"));
+        alert("Tổng dãy fibonaci từ 1 -> "+n+" là "+sumFibonaci(n));
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       function check(str) {
+           let arr =[];
+           for(let i =0;i<str.length;i++){
+               if(arr.indexOf(str[i])===-1){
+                   arr.push(str[i]);
+               }
+           }
+           return arr.length;
+       }
+       let str1 = ["a","b","c","a","d"];
+       document.write(check(str1));
+   </script>
+</body>
+</html>

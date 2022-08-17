@@ -1,0 +1,49 @@
+body {
+    color: brown;
+}
+h1 {
+    color: orange;
+}
+.x {
+    text-align: center;
+    /* căn giữa */
+}
+.y {
+    text-align: left;
+    /* căn trái */
+}
+.z {
+    text-align: right;
+    /* căn phải */
+}
+div {
+    border: 1px solid black;
+    /* tạo viên cho thẻ div */
+}
+a{
+    text-decoration: none;
+    /* bỏ dấu gạch chân của  liên kết */
+}
+.uppercase {
+    text-transform: uppercase;
+    /*Viết hoa*/
+}
+.lowercase {
+    text-transform: lowercase;
+    /*Viết thường  */
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.indent {
+    text-indent: 50px;
+    /* thụt vào */
+}
+.letter-spacing {
+    letter-spacing: 10px;
+    /*khoảng cách các kí tự */
+}
+.word-spacing {
+    word-spacing:30px ;
+}
+

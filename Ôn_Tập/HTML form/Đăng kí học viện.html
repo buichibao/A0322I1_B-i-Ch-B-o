@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+ <style>
+     body {
+         width: 500px;
+         height: auto;
+
+         padding: 5px;
+     }
+     .c{
+         color: blue;
+     }
+     form{
+         background-color: beige;
+     }
+ </style>
+<body>
+<form >
+    <div>
+        <h2 style="background-color: #AFEEEE;color: blue">ĐĂNG KÍ HỌC VIÊN</h2>
+    </div>
+    <table >
+        <tr>
+            <td class="c">Họ và tên</td>
+            <td><input type="text" name="hoten"></td>
+        </tr>
+        <tr>
+            <td class="c">Ngày sinh</td>
+            <td><input type="text" name="ngaysinh"></td>
+        </tr>
+        <tr>
+            <td class="c">Giới tính</td>
+            <td><input type="radio" name="nam">Nam<input type="radio" name="nu">Nam</td>
+        </tr>
+        <tr>
+            <td class="c">Địa chỉ</td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td class="c">lớp</td>
+            <td><select>
+                <option>--Chọn lớp--</option>
+                <option>A3</option>
+                <option>A8</option>
+                <option>A5</option>
+                <option>A6</option>
+                <option>A4</option>
+                <option>A2</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td class="c">Email</td>
+            <td><input name="email" type="text"></td>
+        </tr>
+        <tr>
+            <td class="c">Điện thoại</td>
+            <td><input name="phone" type="phone"></td>
+        </tr>
+    </table>
+        <div style="padding-left: 70px">
+            <input type="submit" value="Đăng kí">
+            <input type="reset" value="Nhập lại">
+        </div>
+</form>
+</body>
+</html>

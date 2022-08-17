@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+        let arrA = [];
+        let arrB = [];
+        let result =[];
+        let sizeA = parseInt(prompt("Nhập độ dài của mảng A"));
+        let sizeB =parseInt(prompt("Nhập độ dài của mảng B"));
+        for(let i = 0;i<arrA;i++){
+            arrA.push(parseInt(prompt("Nhập phần tử thứ "+ i +" của mảng A")));
+        }
+        for(let i = 0;i<arrB;i++){
+            arrB.push(parseInt(prompt("Nhập phần tử thứ "+ i +" của mảng B")));
+        }
+        for(let i = 0;i<sizeB;i++){
+            if(arrA.indexOf(arrB[i])===-1&&result.indexOf(arrB[i])===-1){
+                result.push(arrB[i]);
+            }
+        }
+        result.sort(function (a,b){return a-b;});
+        alert("Mảng a = "+a+"\n Mảng b "+b +"\ Mảng result "+result);
+
+     </script>
+</body>
+</html>
